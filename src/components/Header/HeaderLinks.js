@@ -72,7 +72,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://twitter.com/dir_diver"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -81,6 +81,7 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
+      {/*
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
@@ -98,6 +99,7 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
+      */}
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
@@ -107,7 +109,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.instagram.com/duser36/?hl=de"
             target="_blank"
             className={classes.navLink}
           >

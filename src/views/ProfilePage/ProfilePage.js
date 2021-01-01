@@ -23,13 +23,14 @@ import studio3 from "assets/img/myImages/wangerooge_bob_remasterd_3.jpeg";
 import studio4 from "assets/img/myImages/wangerooge_bob_remasterd_4.jpeg";
 import studio5 from "assets/img/myImages/wangerooge_bob_remasterd_5.jpeg";
 import studio6 from "assets/img/myImages/wangerooge_bob_remasterd_6.jpeg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+//import work1 from "assets/img/examples/olu-eletu.jpg";
+//import work2 from "assets/img/examples/clem-onojeghuo.jpg";
+//import work3 from "assets/img/examples/cynthia-del-rio.jpg";
+//import work4 from "assets/img/examples/mariya-georgieva.jpg";
+//import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import Muted from "components/Typography/Muted.js";
 
 const useStyles = makeStyles(styles);
 
@@ -46,7 +47,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Jblender.org"
+        brand="danbey.de"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -55,7 +56,7 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+      <Parallax small filter image={require("assets/img/nik_yosemite.jpg")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -73,9 +74,6 @@ export default function ProfilePage(props) {
                     </Button>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
                     </Button>
                   </div>
                 </div>
@@ -129,37 +127,48 @@ export default function ProfilePage(props) {
                       tabButton: "Development",
                       tabIcon: Palette,
                       tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work5}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
+                        <div>
+                          <h1>Minikube Anleitung</h1>
+                          <Muted>
+                            <p>
+                            Hier meine erst kleine Anleitung &uuml;ber die Verwendung von Minikube. Minikube ist eine lokale Kubernetes - Umgebung und eignet
+                            sich f&uuml;r die Installation auf dem eigenen Laptop oder oder in einem Dockercontainer f&uuml;r Entwicklungszwecke.</p>
+
+                            <p>Die Anleitung dient dazu euch die wichtigsten Befehle aufzuzeigen und als kleines HowTo!</p>
+
+                            What worked for me, based on the solution by @svenwltr: 
+                            # Start minikube
+                            <code>minikube start</code>
+
+                            # Set docker env
+                            <code>eval $(minikube docker-env)</code>
+
+                            # Build image
+                           <code>docker build -t foo:0.0.1 .</code> 
+
+                            # Run in minikube
+                            <code>kubectl run hello-foo --image=foo:0.0.1 --image-pull-policy=Never</code>
+
+                            # Check that it's running
+                            <code>kubectl get pods</code>
+
+                            <p>Lokales Kubernetes/Minikube starten: <code>minikube start</code></p>
+
+                            <p>Starten von Minikube für den Mac-Book: <code>minikube start — vm-driver=hyperkt</code></p>
+
+                            <p>Kubernetes Dashboard öffnen:  <code>minikube dashboard</code></p>
+                            Es sollte nun unter http://127.0.0.1:8001 ein K8s-Dashboard verfügbar sein.
+
+                            <p>Kubernetes mit Verwendung einer bereits lokal installierten Dockerumgebung und ohne einer zentralen Containerregistry.</p>
+                            <code>
+                            kubectl cluster-info 
+                            eval $(minikube docker-env) 
+                            cd minikube-app/
+                            docker build -t minikube-app:latest .
+                            kubectl create deployment minikube-app --image=minikube-app:latest --image-pull-policy=Never
+                            </code>
+                          </Muted> 
+                        </div>   
                       )
                     }
                    
