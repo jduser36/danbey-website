@@ -81,8 +81,8 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                I am Daniel based in Germany. This is my small blog about photography and some 
-                development projects.{" "}
+                Hi, dies ist meine kleine Webseite, um euch als Blog etwas &uuml;ber meine Fotographie, meine Hobbies und meine 
+                Sotfwareentwicklungs - Projekte zu berichten.{" "}
               </p>
             </div>
             <GridContainer justify="center">
@@ -92,7 +92,7 @@ export default function ProfilePage(props) {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Photography",
+                      tabButton: "Fotographie",
                       tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
@@ -124,49 +124,53 @@ export default function ProfilePage(props) {
                       )
                     },
                     {
-                      tabButton: "Development",
+                      tabButton: "Entwicklung",
                       tabIcon: Palette,
                       tabContent: (
                         <div>
                           <h1>Minikube Anleitung</h1>
                           <Muted>
+                           <div style={{ textAlign: 'left' }}>
                             <p>
                             Hier meine erst kleine Anleitung &uuml;ber die Verwendung von Minikube. Minikube ist eine lokale Kubernetes - Umgebung und eignet
                             sich f&uuml;r die Installation auf dem eigenen Laptop oder oder in einem Dockercontainer f&uuml;r Entwicklungszwecke.</p>
 
                             <p>Die Anleitung dient dazu euch die wichtigsten Befehle aufzuzeigen und als kleines HowTo!</p>
 
-                            What worked for me, based on the solution by @svenwltr: 
-                            # Start minikube
+                            <p>Einige Befehle, basierend auf der Webseite von @svenwltr: </p>
+                            <br/>
+                            <p># Start minikube<br/>
                             <code>minikube start</code>
-
-                            # Set docker env
+                            </p>
+                            <p># Set docker env<br/>
                             <code>eval $(minikube docker-env)</code>
-
-                            # Build image
-                           <code>docker build -t foo:0.0.1 .</code> 
-
-                            # Run in minikube
+                            </p>
+                            <p># Build image<br/>
+                            <code>docker build -t foo:0.0.1 .</code> 
+                            </p>
+                            <p># Run in minikube<br/>
                             <code>kubectl run hello-foo --image=foo:0.0.1 --image-pull-policy=Never</code>
-
-                            # Check that it's running
+                            </p>
+                            <p># Check that it's running<br/>   
                             <code>kubectl get pods</code>
+                            </p>
+                            
+                            <p>Starten von Minikube für den Mac-Book:<br/>
+                            <code>minikube start — vm-driver=hyperkt</code></p>
 
-                            <p>Lokales Kubernetes/Minikube starten: <code>minikube start</code></p>
-
-                            <p>Starten von Minikube für den Mac-Book: <code>minikube start — vm-driver=hyperkt</code></p>
-
-                            <p>Kubernetes Dashboard öffnen:  <code>minikube dashboard</code></p>
-                            Es sollte nun unter http://127.0.0.1:8001 ein K8s-Dashboard verfügbar sein.
+                            <p>Kubernetes Dashboard öffnen:<br/>
+                            <code>minikube dashboard</code></p>
+                            <p>Es sollte nun unter http://127.0.0.1:8001 ein K8s-Dashboard verfügbar sein.</p>
 
                             <p>Kubernetes mit Verwendung einer bereits lokal installierten Dockerumgebung und ohne einer zentralen Containerregistry.</p>
                             <code>
-                            kubectl cluster-info 
-                            eval $(minikube docker-env) 
-                            cd minikube-app/
-                            docker build -t minikube-app:latest .
-                            kubectl create deployment minikube-app --image=minikube-app:latest --image-pull-policy=Never
+                              kubectl cluster-info 
+                              eval $(minikube docker-env) 
+                              cd minikube-app/
+                              docker build -t minikube-app:latest .
+                              kubectl create deployment minikube-app --image=minikube-app:latest --image-pull-policy=Never
                             </code>
+                            </div>
                           </Muted> 
                         </div>   
                       )
