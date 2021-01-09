@@ -23,11 +23,11 @@ import studio3 from "assets/img/myImages/wangerooge_bob_remasterd_3.jpeg";
 import studio4 from "assets/img/myImages/wangerooge_bob_remasterd_4.jpeg";
 import studio5 from "assets/img/myImages/wangerooge_bob_remasterd_5.jpeg";
 import studio6 from "assets/img/myImages/wangerooge_bob_remasterd_6.jpeg";
-//import work1 from "assets/img/examples/olu-eletu.jpg";
-//import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-//import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-//import work4 from "assets/img/examples/mariya-georgieva.jpg";
-//import work5 from "assets/img/examples/clem-onojegaw.jpg";
+import studio3_thum from "assets/img/myImages/thumbnails/wangerooge_bob_remasterd_3_thum.jpeg";
+import studio4_thum from "assets/img/myImages/thumbnails/wangerooge_bob_remasterd_4_thum.jpeg";
+import studio5_thum from "assets/img/myImages/thumbnails/wangerooge_bob_remasterd_5_thum.jpeg";
+import studio6_thum from "assets/img/myImages/thumbnails/wangerooge_bob_remasterd_6_thum.jpeg";
+
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import Muted from "components/Typography/Muted.js";
@@ -91,39 +91,7 @@ export default function ProfilePage(props) {
                   alignCenter
                   color="primary"
                   tabs={[
-                    {
-                      tabButton: "Fotographie",
-                      tabIcon: Camera,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio4}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio6}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    },
-                    {
+                     {
                       tabButton: "Entwicklung",
                       tabIcon: Palette,
                       tabContent: (
@@ -174,8 +142,62 @@ export default function ProfilePage(props) {
                           </Muted> 
                         </div>   
                       )
-                    }
-                   
+                    },
+                    {
+                      tabButton: "Fotographie",
+                      tabIcon: Camera,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={12} sm={12} md={4}>
+                            <a
+                              href={studio3}
+                              target="_blank"
+                              alt="..."
+                              rel="noopener noreferrer"
+                            >
+                            <img
+                              alt="..."
+                              src={studio3_thum}
+                              className={navImageClasses}
+                            /></a>
+                            <a
+                              href={studio4}
+                              target="_blank"
+                              alt="..."
+                              rel="noopener noreferrer"
+                            >
+                            <img
+                              alt="..."
+                              src={studio4_thum}
+                              className={navImageClasses}
+                            /></a>
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            <a
+                              href={studio5}
+                              target="_blank"
+                              alt="..."
+                              rel="noopener noreferrer"
+                            >
+                            <img
+                              alt="..."
+                              src={studio5_thum}
+                              className={navImageClasses}
+                            /></a>
+                            <a
+                              href={studio6}
+                              target="_blank"
+                              alt="..."
+                              rel="noopener noreferrer"
+                            ><img
+                              alt="..."
+                              src={studio6_thum}
+                              className={navImageClasses}
+                            /></a>
+                          </GridItem>
+                        </GridContainer>
+                      )
+                    },
                   ]}
                 />
               </GridItem>

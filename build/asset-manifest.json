@@ -1,28 +1,32 @@
 {
   "files": {
     "main.css": "/static/css/main.c5a3ee5c.chunk.css",
-    "main.js": "/static/js/main.00b821dc.chunk.js",
-    "main.js.map": "/static/js/main.00b821dc.chunk.js.map",
+    "main.js": "/static/js/main.88fa5546.chunk.js",
+    "main.js.map": "/static/js/main.88fa5546.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.47788c5d.js",
     "runtime-main.js.map": "/static/js/runtime-main.47788c5d.js.map",
-    "static/js/2.1256e186.chunk.js": "/static/js/2.1256e186.chunk.js",
-    "static/js/2.1256e186.chunk.js.map": "/static/js/2.1256e186.chunk.js.map",
+    "static/js/2.860440e5.chunk.js": "/static/js/2.860440e5.chunk.js",
+    "static/js/2.860440e5.chunk.js.map": "/static/js/2.860440e5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a1934ddbcafb3ae68a509b2d3a650922.js": "/precache-manifest.a1934ddbcafb3ae68a509b2d3a650922.js",
+    "precache-manifest.80957e3c9a463504abbeeb4480f910dc.js": "/precache-manifest.80957e3c9a463504abbeeb4480f910dc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.c5a3ee5c.chunk.css.map": "/static/css/main.c5a3ee5c.chunk.css.map",
-    "static/js/2.1256e186.chunk.js.LICENSE.txt": "/static/js/2.1256e186.chunk.js.LICENSE.txt",
+    "static/js/2.860440e5.chunk.js.LICENSE.txt": "/static/js/2.860440e5.chunk.js.LICENSE.txt",
     "static/media/myself_1.jpg": "/static/media/myself_1.0563d5e3.jpg",
     "static/media/nik_yosemite.jpg": "/static/media/nik_yosemite.03713e44.jpg",
     "static/media/wangerooge_bob_remasterd_3.jpeg": "/static/media/wangerooge_bob_remasterd_3.f84eecdb.jpeg",
+    "static/media/wangerooge_bob_remasterd_3_thum.jpeg": "/static/media/wangerooge_bob_remasterd_3_thum.66b44a5b.jpeg",
     "static/media/wangerooge_bob_remasterd_4.jpeg": "/static/media/wangerooge_bob_remasterd_4.312f077a.jpeg",
+    "static/media/wangerooge_bob_remasterd_4_thum.jpeg": "/static/media/wangerooge_bob_remasterd_4_thum.805aaf26.jpeg",
     "static/media/wangerooge_bob_remasterd_5.jpeg": "/static/media/wangerooge_bob_remasterd_5.c1508539.jpeg",
-    "static/media/wangerooge_bob_remasterd_6.jpeg": "/static/media/wangerooge_bob_remasterd_6.c48dece2.jpeg"
+    "static/media/wangerooge_bob_remasterd_5_thum.jpeg": "/static/media/wangerooge_bob_remasterd_5_thum.93431930.jpeg",
+    "static/media/wangerooge_bob_remasterd_6.jpeg": "/static/media/wangerooge_bob_remasterd_6.c48dece2.jpeg",
+    "static/media/wangerooge_bob_remasterd_6_thum.jpeg": "/static/media/wangerooge_bob_remasterd_6_thum.14e169ce.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.47788c5d.js",
-    "static/js/2.1256e186.chunk.js",
+    "static/js/2.860440e5.chunk.js",
     "static/css/main.c5a3ee5c.chunk.css",
-    "static/js/main.00b821dc.chunk.js"
+    "static/js/main.88fa5546.chunk.js"
   ]
 }
